@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: "Montserrat";
-  background: #EEEEEE;        
+  background: #EEEEEE;
   font-size: 18px;
 }
 
@@ -205,7 +205,32 @@ h3, h4 {
     object-fit: cover;
   }
 }
-
+@media only screen and (min-width: 920px) {
+  .wrapper .feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-top: 8em;
+  }
+  .wrapper .feature .imagem {
+    width: 25em;
+  }
+  .wrapper .feature .content {
+    text-align: justify;
+    width: 25em;
+  }
+  .wrapper .feature.left {
+    grid-template-areas: "right left";
+  }
+  .wrapper .feature.left .imagem {
+    grid-area: left;
+  }
+  .wrapper .feature.left .content {
+    text-align: justify;
+    width: 25em;
+    justify-self: left;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .down-arrow {
     stroke: black;
