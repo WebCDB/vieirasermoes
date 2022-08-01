@@ -1,4 +1,4 @@
-let left = document.querySelector('.lefty');
+let left = document.querySelector ('.lefty');
         let content = document.querySelector('.conteudo');
         let protos = document.querySelectorAll('.proto');
 
